@@ -31,11 +31,13 @@ public class Agenda extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         
-        
         super.onCreate(savedInstanceState);
+       
         setContentView(R.layout.activity_agenda);
 
+      
         name = (EditText) findViewById(R.id.nombre);
+       
         lv = (ListView) findViewById(R.id.listView);
 
         
@@ -47,6 +49,8 @@ public class Agenda extends Activity {
         lv.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> parent, View v, int posicion, long id) {
+                       
+                       
                         buscar((String) lv.getItemAtPosition(posicion));
                     }
                 }
@@ -57,6 +61,8 @@ public class Agenda extends Activity {
     
     
     private void abrirDBAdapter() {
+       
+       
         try {
             
             
@@ -92,7 +98,7 @@ public class Agenda extends Activity {
     
     private void mostrarResultados() {
         
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, resultados);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, resultados);
         
         lv.setAdapter(adapter);
     }
