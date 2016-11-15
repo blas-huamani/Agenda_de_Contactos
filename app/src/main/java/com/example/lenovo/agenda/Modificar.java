@@ -16,6 +16,7 @@ public class Modificar extends ActionBarActivity {
 
     
     private EditText nom, ape, tel, email;
+    
     String nombre1;
 
     
