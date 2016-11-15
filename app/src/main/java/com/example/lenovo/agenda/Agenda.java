@@ -77,11 +77,14 @@ public class Agenda extends Activity {
             
             if (fila.moveToFirst()){
                 do {
+                   
                     addToLista(fila);
                 } while (fila.moveToNext());
             }
 
             bd.close();
+           
+           
         } catch (SQLiteException se ) {
             Log.e(getClass().getSimpleName(), "NO se ha podido acceder a la base de datos");
         }
