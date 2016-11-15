@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="title_activity_nuevo">nuevo</string>
+    <string name="title_activity_buqueda">Buqueda</string>
+    <string name="title_activity_busqueda">Busqueda</string>
+    <string name="title_activity_detalles">Detalles</string>
+    <string name="title_activity_modificar">Modificar</string>
+</resources>
